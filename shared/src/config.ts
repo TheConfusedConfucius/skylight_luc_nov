@@ -312,10 +312,10 @@ export interface Config {
 export const DEFAULT_CONFIG: Config = {
   // Default center: San Francisco International (SFO). Set this to your own
   // location — ideally where you'll be looking up at the ceiling.
-  centerLat: 37.6213,
-  centerLon: -122.379,
-  locationName: "San Francisco International",
-  radiusMiles: 3,
+  centerLat: 13.19889,
+  centerLon: 77.70556,
+  locationName: "IATA: BLR",
+  radiusMiles: 50,
   locationProfiles: [],
 
   radioUrl: "http://localhost:8080/data/aircraft.json",
