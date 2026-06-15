@@ -88,31 +88,12 @@ export function Display() {
       )}
       {!state.connected && <div className="reconnect">connecting…</div>}
       <div className="stats-table">
-        <table>
-          <thead>
-            <tr>
-              <th>Flight</th>
-              <th>Aircraft</th>
-              <th>Altitude (ft)</th>
-              <th>Speed (kt)</th>
-              <th>From</th>
-              <th>To</th>
-            </tr>
-          </thead>
-          <tbody>
-            {state.aircraft.map((ac: any) => (
-              <tr key={ac.hex}>
-                <td>{ac.flight?.trim() ?? "—"}</td>
-                <td>{ac.t ?? "—"}</td>
-                <td>{ac.alt_baro ?? "—"}</td>
-                <td>{ac.gs ?? "—"}</td>
-                <td>{ac.origin ?? "—"}</td>
-                <td>{ac.destination ?? "—"}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      <div> {cfg?.locationName ?? "—"}</div>
+      <div> {cfg?.centerLat.toFixed(4)}° N, {cfg?.centerLon.toFixed(4)}° E</div>
+      <div> {new Date().toLocaleTimeString("en-IN", { timeZone: "Asia/Kolkata" })}</div>
+      <div> {state.aircraft.length} aircraft overhead</div>
+      <div> {cfg?.radiusMiles} mi radius</div>
+    </div>
     </div>
   );
 }

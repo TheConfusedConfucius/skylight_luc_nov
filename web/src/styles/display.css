@@ -62,13 +62,13 @@ body,
 }
 .stats-table {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  bottom: 14px;
+  left: 16px;
   background: rgba(10, 12, 16, 0.7);
   color: #AEB6C6;
   font: 12px/1.4 "JetBrains Mono", ui-monospace, monospace;
-  padding: 8px 16px;
+  padding: 8px 12px;
   pointer-events: none;
   z-index: 10;
+  border-radius: 6px;
 }
