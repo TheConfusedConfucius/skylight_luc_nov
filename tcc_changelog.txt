@@ -1,0 +1,7 @@
+The Confused Confucius(TCC)' changes and plans for this project:
+1) Updated the cursor issue
+2) Added a stats table having coordinates, location, Current location's timezone, miles radius etc.
+3) Change Displayed units to SI units [plan]
+4) Add audio from Spotify/APIs into the website, for casual viewing [plan] 
+
+P.S: To change location - go to shared/src/config.ts/DEFAULT_CONFIG/"Lines 315-318"
