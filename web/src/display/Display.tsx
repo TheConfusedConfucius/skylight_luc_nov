@@ -87,6 +87,32 @@ export function Display() {
         </div>
       )}
       {!state.connected && <div className="reconnect">connecting…</div>}
+      <div className="stats-table">
+  <table>
+    <thead>
+      <tr>
+        <th>Flight</th>
+        <th>Aircraft</th>
+        <th>Altitude (ft)</th>
+        <th>Speed (kt)</th>
+        <th>From</th>
+        <th>To</th>
+      </tr>
+    </thead>
+    <tbody>
+      {state.aircraft.map((ac: any) => (
+        <tr key={ac.hex}>
+          <td>{ac.flight?.trim() ?? "—"}</td>
+          <td>{ac.t ?? "—"}</td>
+          <td>{ac.alt_baro ?? "—"}</td>
+          <td>{ac.gs ?? "—"}</td>
+          <td>{ac.origin ?? "—"}</td>
+          <td>{ac.destination ?? "—"}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
     </div>
   );
 }
