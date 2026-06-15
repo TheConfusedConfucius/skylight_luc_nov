@@ -14,7 +14,7 @@ body,
   overflow: hidden;
 }
 .display-body {
-  cursor: none; /* hidden on the projector; unclutter also runs on the Pi */
+  cursor: cell; 
 }
 .display-root {
   position: fixed;

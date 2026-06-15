@@ -311,7 +311,7 @@ export interface Config {
 
 export const DEFAULT_CONFIG: Config = {
   // Default center: San Francisco International (SFO). Set this to your own
-  // location — ideally where you'll be looking up at the ceiling.
+  // location — ideally where you'll be looking up at the ceiling
   centerLat: 13.19889,
   centerLon: 77.70556,
   locationName: "IATA: BLR",
